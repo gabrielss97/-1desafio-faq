@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  padding: 2rem;
+}
+
+.container {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 327px;
+  margin-top: 6rem;
+  padding-top: 4rem;
+}
+
+.imgs {
+  position: absolute;
+  top: -2%;
+  left: 47%;
+}
+
+.imgs > img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.imgs > img.shadow {
+  transform: translate(-44%, 7%);
+}
+
+.faq {
+  margin-top: 4rem;
+}
+
+.faq h1 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #1e1f36;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.faq ul {
+  list-style: none;
+}
+
+.faq ul li {
+  position: relative;
+  border-bottom: 1px solid #e8e8ea;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.faq ul li:last-child {
+  border-bottom: none;
+}
+
+.faq ul li h3 {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #4b4c5f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq ul li p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+  margin-top: 1rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 1000px) {
+  .container {
+    max-width: 920px;
+    padding: 65px 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imgs {
+    position: static;
+  }
+
+  .container > img {
+    position: static;
+    width: 50%;
+    margin-right: 65px;
+  }
+
+  .faq {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .faq h1 {
+    text-align: left;
+  }
+
+  .imgs {
+    transform: scale(2);
+  }
+}
